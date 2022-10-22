@@ -140,6 +140,9 @@ p {
 	display: flex;
 	justify-content: space-around;
 }
+.fa-icons {
+	margin-right: 2rem;
+}
 
 @media screen and (min-width: 992px) {
 	.section {

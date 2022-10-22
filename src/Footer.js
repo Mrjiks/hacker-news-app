@@ -26,13 +26,18 @@ const Footer = () => {
 				</div>
 				<p>Designed by Jiks</p>
 				<div className='socials'>
-					<a href='https://twitter.com/iamjikson'>
-						<FaTwitter className='fa-icons' />
+					<a
+						href='https://twitter.com/iamjikson'
+						className='fa-icons'
+					>
+						<FaTwitter />
 					</a>
-					<FaInstagram className='fa-icons' />
-					<FaYoutube className='fa-icons' />
-					<a href='https://github.com/Mrjiks'>
-						<FaGithubAlt className='fa-icons' />
+
+					<a
+						href='https://github.com/Mrjiks'
+						className='fa-icons'
+					>
+						<FaGithubAlt />
 					</a>
 				</div>
 			</div>
