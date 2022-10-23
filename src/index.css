@@ -19,6 +19,7 @@ Variables
 	--header-h1: white;
 	--clr-font: rgb(151, 87, 87);
 	--clr-primary: #ea2424;
+
 	--nav-primary: rgb(243, 165, 165);
 	--footer-primary: rgb(243, 165, 165);
 }
@@ -61,7 +62,6 @@ h1,
 h2,
 h3,
 h4 {
-	/* letter-spacing: var(--spacing); */
 	text-transform: capitalize;
 	line-height: 1.25;
 	margin-bottom: 0.75rem;
@@ -84,29 +84,7 @@ p {
 	margin-bottom: 1.25rem;
 	color: var(--header-h1);
 }
-@media screen and (min-width: 800px) {
-	h1 {
-		font-size: 3rem;
-	}
-	h2 {
-		font-size: 2.5rem;
-	}
-	h3 {
-		font-size: 1.75rem;
-	}
-	h4 {
-		font-size: 1rem;
-	}
-	body {
-		font-size: 1rem;
-	}
-	h1,
-	h2,
-	h3,
-	h4 {
-		line-height: 1;
-	}
-}
+
 /*  global classes */
 
 /* section */
@@ -158,12 +136,6 @@ p {
 }
 .fa-icons {
 	margin-right: 2rem;
-}
-
-@media screen and (min-width: 992px) {
-	.section {
-		width: 95vw;
-	}
 }
 
 /*
@@ -267,13 +239,7 @@ Story
 	display: grid;
 	gap: 2rem;
 }
-@media screen and (min-width: 992px) {
-	.stories {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		/* align-items: start; */
-	}
-}
+
 .story {
 	background: var(--clr-white);
 	border-radius: var(--radius);
@@ -293,7 +259,7 @@ Story
 	font-size: 0.85rem;
 	margin-right: 0.75rem;
 	text-transform: capitalize;
-	color: var(--clr-primary-5);
+	color: var(--header-h1);
 }
 
 .remove-btn {
@@ -303,4 +269,48 @@ Story
 	cursor: pointer;
 	text-transform: capitalize;
 	font-size: 0.85rem;
+}
+
+/*
+=============== 
+Media Queries
+===============
+*/
+
+@media screen and (min-width: 800px) {
+	h1 {
+		font-size: 3rem;
+	}
+	h2 {
+		font-size: 2.5rem;
+	}
+	h3 {
+		font-size: 1.75rem;
+	}
+	h4 {
+		font-size: 1rem;
+	}
+	body {
+		font-size: 1rem;
+	}
+	h1,
+	h2,
+	h3,
+	h4 {
+		line-height: 1;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.section {
+		width: 95vw;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.stories {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		/* align-items: start; */
+	}
 }
