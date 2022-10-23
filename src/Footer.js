@@ -14,9 +14,8 @@ const Footer = () => {
 				</div>
 				<div className='footer-item'>
 					<h1>Legal</h1>
-					<p>Cookies Policy</p>
+
 					<p>Privacy Policy</p>
-					<p>Terms of Service</p>
 				</div>
 			</div>
 

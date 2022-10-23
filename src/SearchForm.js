@@ -14,6 +14,7 @@ const SearchForm = () => {
 				value={query}
 				className='form-input'
 				onChange={e => handleSearch(e.target.value)}
+				autoFocus
 			/>
 		</form>
 	);

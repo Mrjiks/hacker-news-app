@@ -1,16 +1,25 @@
 import React from 'react';
-import SearchForm from './SearchForm';
-import Stories from './Stories';
-import Buttons from './Buttons';
-import Footer from './Footer';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './Navbar';
+import About from './About';
+import Home from './Home';
 function App() {
 	return (
-		<>
-			<SearchForm />
-			<Buttons />
-			<Stories />
-			<Footer />
-		</>
+		<Router>
+			<Navbar />
+			<Routes>
+				<Route
+					path='/'
+					element={<Home />}
+				/>
+			</Routes>
+			<Routes>
+				<Route
+					path='/about'
+					element={<About />}
+				/>
+			</Routes>
+		</Router>
 	);
 }
 
