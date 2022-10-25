@@ -107,7 +107,7 @@ p {
 .nav-links .link {
 	display: flex;
 	flex-direction: column;
-	margin: 0.2rem;
+	padding: 1rem;
 	color: white;
 }
 
@@ -118,19 +118,24 @@ p {
 		align-items: center;
 		justify-content: space-between;
 	}
-
+	.logo {
+		margin-left: 3rem;
+	}
 	.nav-links {
 		display: flex;
 		flex-direction: row;
-		justify-content: space-between;
+		justify-content: space-around;
+		align-items: center;
 	}
 	.link {
-		margin: 3rem;
+		padding: 1.2rem;
+	}
+	.btn-theme {
+		margin-right: 2rem;
 	}
 }
 
 .link:hover {
-	outline: solid 2rem pink;
 	color: white;
 }
 .link:active {
