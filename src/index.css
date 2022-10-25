@@ -153,6 +153,7 @@ p {
 	text-align: center;
 	background: var(--footer-primary);
 	padding: 20px;
+	width: 100%;
 }
 @media (min-width: 768px) {
 	.footer,
