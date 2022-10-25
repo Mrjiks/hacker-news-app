@@ -27,37 +27,35 @@ function Navbar() {
 	}, [theme]);
 
 	return (
-		<section className='section'>
-			<nav className='nav-center'>
-				<div className='nav-center'>
-					<h1>Hnews</h1>
-				</div>
-				<div className='nav-links'>
-					<ul>
-						<Link
-							to='/'
-							className='link'
-						>
-							Home
-						</Link>
-						<Link
-							to='/about'
-							className='link'
-						>
-							About
-						</Link>
-					</ul>
-					<div className='btn-theme'>
-						<button
-							className='btn'
-							onClick={toggleTheme}
-						>
-							{theme === 'light-theme' ? 'Dark Mode' : 'Light Mode'}
-						</button>
-					</div>
-				</div>
-			</nav>
-		</section>
+		<nav className='nav-center'>
+			<div className='logo nav-links'>
+				<h1>Hnews</h1>
+			</div>
+			<div>
+				<ul className='nav-links'>
+					<Link
+						to='/'
+						className='link'
+					>
+						Home
+					</Link>
+					<Link
+						to='/about'
+						className='link'
+					>
+						About
+					</Link>
+				</ul>
+			</div>
+			<div className='btn-theme'>
+				<button
+					className='btn'
+					onClick={toggleTheme}
+				>
+					{theme === 'light-theme' ? 'Dark Mode' : 'Light Mode'}
+				</button>
+			</div>
+		</nav>
 	);
 }
 

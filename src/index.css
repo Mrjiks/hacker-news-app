@@ -10,7 +10,7 @@ Variables
 	--radius: 0.25rem;
 	--light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 	--dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-	--max-width: 1170px;
+	/* --max-width: 1170px; */
 	--fixed-width: 620px;
 }
 
@@ -91,25 +91,42 @@ p {
 .section {
 	width: 90vw;
 	margin: 0 auto;
-	max-width: var(--max-width);
 	height: 100%;
 }
 .nav-center {
 	display: flex;
-	height: 100px;
-	padding: 3rem;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	flex-direction: column;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
 	background: var(--nav-primary);
 }
-.nav-links {
-	display: flex;
-	justify-content: space-between;
-	margin: 3rem;
-}
+
 .nav-links .link {
-	margin: 1rem;
+	display: flex;
+	flex-direction: column;
+	margin: 0.2rem;
 	color: white;
+}
+
+@media (min-width: 768px) {
+	.nav-center {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.nav-links {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.link {
+		margin: 3rem;
+	}
 }
 
 .link:hover {
@@ -120,15 +137,27 @@ p {
 	border-bottom: solid 2rem white;
 }
 .btn-theme {
-	margin-left: 3rem;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
 }
 .footer,
 .footer-copyright {
 	display: flex;
-	justify-content: space-between;
+	flex-direction: column;
 	align-items: center;
+	text-align: center;
 	background: var(--footer-primary);
 	padding: 20px;
+}
+@media (min-width: 768px) {
+	.footer,
+	.footer-copyright {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background: var(--footer-primary);
+		padding: 20px;
+	}
 }
 .socials {
 	display: flex;
@@ -276,6 +305,23 @@ Story
 Media Queries
 ===============
 */
+
+@media screen and (min-width: 1400px) {
+	.section {
+		display: flex;
+		width: 90vw;
+		margin: 0 auto;
+		max-width: var(--max-width);
+		overflow: hidden;
+	}
+	.nav-center {
+		display: flex;
+		overflow: hidden;
+		padding: 3rem;
+		justify-content: space-between;
+		background: var(--nav-primary);
+	}
+}
 
 @media screen and (min-width: 800px) {
 	h1 {
